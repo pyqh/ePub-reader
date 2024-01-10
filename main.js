@@ -60,7 +60,7 @@ async function Locations() {
 
 function setupEvents() {
   // Keyboard interaction
-  const keyListener = function (e) {
+  function keyListener(e) {
     switch (e.key) {
       case 'ArrowLeft':
         previousPage();
@@ -70,7 +70,7 @@ function setupEvents() {
         nextPage();
         break;
     }
-  };
+  }
 
   // Functions for page navigation
   function nextPage() {
@@ -132,7 +132,6 @@ async function rendered() {
         }
       }
     }
-    document.querySelector('iframe').contentDocument.onkeyup = keyListener;
   });
 }
 
