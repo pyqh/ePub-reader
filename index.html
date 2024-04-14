@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ePub Viewer</title>
+
+    <script src="libs/jszip.min.js"></script>
+    <script src="libs/epub.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <span id="prev" class="arrow">‹</span>
+      <main>
+        <select id="toc"></select>
+        <div id="viewer" class="loading"></div>
+        <div id="footer">
+          <div id="upload">exit</div>
+          <div id="progress"></div>
+        </div>
+      </main>
+      <span id="next" class="arrow">›</span>
+    </div>
+    <script src="main.js"></script>
+    <script src="translate.js"></script>
+  </body>
+</html>
